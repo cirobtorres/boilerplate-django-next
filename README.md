@@ -44,7 +44,7 @@
    docker-compose run <service> python manage.py startapp <app_name> .\backend\djangoapp\apps\<app_folder>
    ```
 
-   #### Obs.: `swap <service> for **backend** in case you haven't stablished a custom **container_name** for your backend container inside **docker-compose.yml**`. 
+   #### Obs.: swap <service> for **backend** in case you haven't stablished a custom **container_name** for your backend container inside **docker-compose.yml**. 
 
 2. Access docker folders for any reason:
 
