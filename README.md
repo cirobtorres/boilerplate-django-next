@@ -8,7 +8,7 @@
    git clone git@github.com:cirobtorres/django-nextjs-boilerplate.git
    ```
 
-2. `Make sure to rename **.env.example** to **.env** and config your keys, passwords etc`. Path: root_of_your_project\backend\dotenv\
+2. Make sure to rename **.env.example** to **.env** and config your keys, passwords etc. Path to **dotenv** file: root_of_your_project\backend\dotenv\
 
 3. Navigate to the same directory of docker-compose and do as follows:
    
@@ -44,7 +44,7 @@
    docker-compose run <service> python manage.py startapp <app_name> .\backend\djangoapp\apps\<app_folder>
    ```
 
-   #### Obs.: `swap <service> for backend in case you haven't stablished a custom container_name for your backend container inside docker-compose.yml`. 
+   #### Obs.: swap **<service>** for **backend** in case you haven't stablished a custom **container_name** for your backend container inside **docker-compose.yml**. 
 
 2. Access docker folders for any reason:
 
@@ -52,10 +52,30 @@
    docker exec -it <container_name> sh
    ```
 
-3. Clear unused objects without a confirmation prompt: 
+   Obs.: if you don't know your container's name, type:
+
+   ```bash
+   docker-compose ps
+
+   # or
+
+   docker container ls # lists all running containers
+
+   docker container ls -a # lists all containers you have
+   ```
+
+4. Clear unused objects without a confirmation prompt: 
 
    ```bash
    docker system prune --all --force
    ```
 
    #### Obs.: Add --volumes in case you want to get rid of unused volumes as well.
+
+   ```bash
+   # Another trick:
+
+   docker container rm $(docker container ls -aq)
+
+   docker image rm $(docker image ls -aq)
+   ```
