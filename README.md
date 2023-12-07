@@ -8,9 +8,9 @@
    git clone git@github.com:cirobtorres/django-nextjs-boilerplate.git
    ```
 
-2. Make sure to rename **.env.example** to **.env** and config your keys, passwords etc. Path to **dotenv** file: root_of_your_project\backend\dotenv\
+2. Make sure to rename **.env.example** to **.env** and config your keys. Path to **dotenv**: backend\dotenv\
 
-3. Navigate to the same directory of docker-compose and do as follows:
+3. Navigate to docker-compose directory and do as follows:
    
    ```bash
    docker-compose up --build
