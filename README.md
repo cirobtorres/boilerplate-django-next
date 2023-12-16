@@ -6,12 +6,16 @@
 
    ```bash
    git clone git@github.com:cirobtorres/django-nextjs-boilerplate.git
+
+   # or
+
+   git clone git@github.com:cirobtorres/django-nextjs-boilerplate.git <repository_name>
    ```
 
 2. Make sure to rename **.env.example** to **.env** and config your keys. Path to **dotenv**: backend\dotenv\
 
 3. Navigate to docker-compose directory and do as follows:
-   
+
    ```bash
    docker-compose up --build
 
@@ -26,7 +30,7 @@
    docker-compose down
    ```
 
-## Tips:
+## Dockerizing:
 
 ### While docker containers are up and running, you may:
 
@@ -44,7 +48,7 @@
    docker-compose run <service> python manage.py startapp <app_name> .\backend\djangoapp\apps\<app_folder>
    ```
 
-   #### Obs.: swap **<service>** for **backend** in case you haven't stablished a custom **container_name** for your backend container inside **docker-compose.yml**. 
+   #### Obs.: swap **<service>** for **backend** in case you haven't stablished a custom **container_name** for your backend container inside **docker-compose.yml**.
 
 2. Access docker folders for any reason:
 
@@ -64,7 +68,7 @@
    docker container ls -a # lists all containers you have
    ```
 
-4. Clear unused objects without a confirmation prompt: 
+3. Clear unused objects without a confirmation prompt:
 
    ```bash
    docker system prune --all --force
@@ -79,3 +83,31 @@
 
    docker image rm $(docker image ls -aq)
    ```
+
+## Installed Packages:
+
+### Django:
+
+1. [Python Dotenv](https://github.com/theskumar/python-dotenv)
+2. [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
+3. [Faker](https://faker.readthedocs.io/en/master/index.html)
+4. [Pytest](https://pytest-django.readthedocs.io/en/latest/)
+5. [Coverage](https://coverage.readthedocs.io/en/6.5.0/)
+6. [Selenium](https://selenium-python.readthedocs.io/installation.html#introduction)
+7. [Django Cors Headers](https://pypi.org/project/django-cors-headers/)
+8. [Django Rest Framework](https://www.django-rest-framework.org/#installation)
+9. [Django Rest Framework Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
+10. [Psycopg2 Binary](https://www.psycopg.org/docs/install.html#quick-install)
+
+### Next.js:
+
+1. [Tailwindcss](https://tailwindcss.com/docs/installation)
+2. [Typescript](https://www.typescriptlang.org/download)
+3. [Eslint]()
+4. [Prettier]()
+5. [Husky]()
+6. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
+7. [Daisy UI](https://daisyui.com/docs/install/)
+8. [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
+9. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
+10. [React Icons](https://react-icons.github.io/react-icons/)
