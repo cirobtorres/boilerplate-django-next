@@ -105,15 +105,63 @@
 1. [NextJS](https://nextjs.org/docs/getting-started/installation#automatic-installation)
 2. [Tailwindcss](https://tailwindcss.com/docs/installation)
 
-   2.1. [Tailwindcss Class Sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+   [Tailwindcss Class Sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
 
-   2.2. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
+   [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
+
+   [Daisy UI](https://daisyui.com/docs/install/)
+
+   [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
 
 3. [Typescript](https://www.typescriptlang.org/download)
 4. [Eslint](https://eslint.org/docs/latest/use/command-line-interface#miscellaneous)
 5. [Prettier](https://prettier.io/docs/en/install)
 6. [Husky](https://typicode.github.io/husky/getting-started.html)
-7. [Daisy UI](https://daisyui.com/docs/install/)
-8. [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
-9. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
-10. [React Icons](https://react-icons.github.io/react-icons/)
+7. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
+8. [React Icons](https://react-icons.github.io/react-icons/)
+
+## Husky
+
+### Usually husky is not shared accross github and I've decided not to configure it at a docker container. If you wish to install husky (optional), do carefully as follows:
+
+```bash
+npx husky-init
+```
+
+- **`npx husky-init`** must iniciate husky.sh inside **.git** rather than **frontend**.
+- Do not run that command inside frontend. Navigate to root folder (same as .git should be in this repository) and run that command.
+- Ensure **husky-init** has set **husky.sh** to the right folder before following next steps.
+
+Folder structure:
+
+```
+.git
+   ...
+   hooks
+      _
+         husky.sh
+   pre-commit (custom hooks are located here)
+   ...
+```
+
+- **`Husky`** assumes **.git** folder to be located at same directory as **package.json**.
+- It is needed we install husky. If you install husky with **`npm i`**, like that, you'll probably get an error on this folder setup.
+- To get around this, configure a new **script** at **package.json** like so: **`"prepare": "cd .. && husky install .git/hooks"`**.
+- Then, run:
+
+```bash
+npm run prepare
+```
+
+- Your custom hooks must start somewhat like this:
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+cd frontend
+
+(...)
+```
+
+- Remember: custom hooks are supposed to be set inside **.git\hooks** and husky.sh inside **.git\hooks\\\_\husky.sh**. Thats where they belong.

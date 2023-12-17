@@ -145,9 +145,6 @@ venv.bak/
 .pnp.js
 .yarn/install-state.gz
 
-# husky
-.husky
-
 # next.js
 /.next/
 /out/
