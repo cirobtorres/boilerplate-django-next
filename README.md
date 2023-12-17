@@ -103,9 +103,9 @@
 
 1. [Tailwindcss](https://tailwindcss.com/docs/installation)
 2. [Typescript](https://www.typescriptlang.org/download)
-3. [Eslint]()
-4. [Prettier]()
-5. [Husky]()
+3. [Eslint](https://eslint.org/docs/latest/use/command-line-interface#miscellaneous)
+4. [Prettier](https://prettier.io/docs/en/install)
+5. [Husky](https://typicode.github.io/husky/getting-started.html)
 6. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
 7. [Daisy UI](https://daisyui.com/docs/install/)
 8. [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
