@@ -104,12 +104,16 @@
 
 1. [NextJS](https://nextjs.org/docs/getting-started/installation#automatic-installation)
 2. [Tailwindcss](https://tailwindcss.com/docs/installation)
+
+   2.1. [Tailwindcss Class Sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+
+   2.2. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
+
 3. [Typescript](https://www.typescriptlang.org/download)
 4. [Eslint](https://eslint.org/docs/latest/use/command-line-interface#miscellaneous)
 5. [Prettier](https://prettier.io/docs/en/install)
 6. [Husky](https://typicode.github.io/husky/getting-started.html)
-7. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
-8. [Daisy UI](https://daisyui.com/docs/install/)
-9. [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
-10. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
-11. [React Icons](https://react-icons.github.io/react-icons/)
+7. [Daisy UI](https://daisyui.com/docs/install/)
+8. [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
+9. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
+10. [React Icons](https://react-icons.github.io/react-icons/)
