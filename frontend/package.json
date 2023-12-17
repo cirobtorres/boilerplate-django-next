@@ -11,7 +11,7 @@
     "check-format": "prettier --check .",
     "check-lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "format": "prettier --write .",
-    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
+    "test-all": "cd frontend && npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "dependencies": {
     "flowbite": "^2.2.1",
