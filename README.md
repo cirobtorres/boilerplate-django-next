@@ -86,7 +86,7 @@
 
 ## Installed Packages:
 
-### Django:
+### Backend:
 
 1. [Python Dotenv](https://github.com/theskumar/python-dotenv)
 2. [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
@@ -94,20 +94,22 @@
 4. [Pytest](https://pytest-django.readthedocs.io/en/latest/)
 5. [Coverage](https://coverage.readthedocs.io/en/6.5.0/)
 6. [Selenium](https://selenium-python.readthedocs.io/installation.html#introduction)
-7. [Django Cors Headers](https://pypi.org/project/django-cors-headers/)
-8. [Django Rest Framework](https://www.django-rest-framework.org/#installation)
-9. [Django Rest Framework Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
-10. [Psycopg2 Binary](https://www.psycopg.org/docs/install.html#quick-install)
+7. [Django](https://www.djangoproject.com/download/)
+8. [Django Cors Headers](https://pypi.org/project/django-cors-headers/)
+9. [Django Rest Framework](https://www.django-rest-framework.org/#installation)
+10. [Django Rest Framework Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
+11. [Psycopg2 Binary](https://www.psycopg.org/docs/install.html#quick-install)
 
-### Next.js:
+### Frontend:
 
-1. [Tailwindcss](https://tailwindcss.com/docs/installation)
-2. [Typescript](https://www.typescriptlang.org/download)
-3. [Eslint](https://eslint.org/docs/latest/use/command-line-interface#miscellaneous)
-4. [Prettier](https://prettier.io/docs/en/install)
-5. [Husky](https://typicode.github.io/husky/getting-started.html)
-6. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
-7. [Daisy UI](https://daisyui.com/docs/install/)
-8. [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
-9. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
-10. [React Icons](https://react-icons.github.io/react-icons/)
+1. [NextJS](https://nextjs.org/docs/getting-started/installation#automatic-installation)
+2. [Tailwindcss](https://tailwindcss.com/docs/installation)
+3. [Typescript](https://www.typescriptlang.org/download)
+4. [Eslint](https://eslint.org/docs/latest/use/command-line-interface#miscellaneous)
+5. [Prettier](https://prettier.io/docs/en/install)
+6. [Husky](https://typicode.github.io/husky/getting-started.html)
+7. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
+8. [Daisy UI](https://daisyui.com/docs/install/)
+9. [Flowbite](https://flowbite.com/docs/getting-started/next-js/#install-flowbite-react)
+10. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
+11. [React Icons](https://react-icons.github.io/react-icons/)
