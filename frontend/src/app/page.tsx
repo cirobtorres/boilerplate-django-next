@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>Testing Husky</main>;
+  return <main></main>;
 }
