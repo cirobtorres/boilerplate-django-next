@@ -146,7 +146,7 @@ venv.bak/
 .yarn/install-state.gz
 
 # next.js
-/.next/
+*/.next*/**
 /out/
 
 # production
