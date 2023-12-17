@@ -1,1 +1,3 @@
-type User = {};
+type User = {
+  firstName: string;
+};
