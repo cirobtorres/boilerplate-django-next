@@ -12,8 +12,6 @@ const config: Config = {
     extend: {},
   },
   plugins: [
-    require("daisyui"),
-    require("flowbite/plugin"),
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     require("tailwind-scrollbar")({ nocompatible: true }),
   ],
