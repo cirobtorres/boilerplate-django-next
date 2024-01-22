@@ -84,6 +84,8 @@
    docker image rm $(docker image ls -aq)
    ```
 
+## OBS: The backend folder is settled up for deploy. While developing, you need to move .env from dotenv to djangoapp otherwise you'll be unable to use django manage.py prompt commands.
+
 ## Installed Packages:
 
 ### Backend:
