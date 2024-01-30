@@ -86,6 +86,32 @@
 
 ## OBS: The backend folder is settled up for deploy. While developing, you need to move .env from dotenv to djangoapp otherwise you'll be unable to use django manage.py prompt commands.
 
+## Acessing PGADMIN4:
+
+1. Use command below to copy postgres NAME:
+
+```bash
+docker container ls
+```
+
+OBS: if you haven't defined a custom postgres' container_name at docker-compose.yml, then it'll be named <your_project's_name>-database-1 by default.
+
+2. URL: [http://localhost:5050/browser/](http://localhost:5050/browser/)
+
+3. At .env, set your login credentials:
+   PGADMIN_DEFAULT_EMAIL="change-me"
+   PGADMIN_DEFAULT_PASSWORD="change-me"
+
+4. Inside pgadmin4, click add new server:
+   General:
+      Name = Whatever you want
+   Connection:
+      Host name/address = **<your_project's_name>-database-1** or your custom postgres' container_name
+      Username = your **POSTGRES_USER**
+      Password = your **POSTGRES_PASSWORD**
+
+5. Save
+
 ## Installed Packages:
 
 ### Backend:
