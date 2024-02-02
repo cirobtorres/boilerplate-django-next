@@ -103,9 +103,9 @@ OBS: if you haven't defined a custom postgres' container_name at docker-compose.
    PGADMIN_DEFAULT_PASSWORD="change-me"
 
 4. Inside pgadmin4, click add new server:
-   General:
+   - General:
       - Name = Whatever you want
-   Connection:
+   - Connection:
       - Host name/address = **<your_project's_name>-database-1** or your custom postgres' container_name
       - Username = your **POSTGRES_USER**
       - Password = your **POSTGRES_PASSWORD**
