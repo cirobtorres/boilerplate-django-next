@@ -1,6 +1,5 @@
 coverage==6.5.0
 Django==5.0.1
-django-cors-headers==4.2.0
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.2.2
 Faker==20.0.3
