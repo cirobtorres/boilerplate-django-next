@@ -34,23 +34,25 @@
 
 ### While docker containers are up and running, you may:
 
-1. Make use of some django commands like that:
+1. If you need to use some django commands like **django shell** I strongly recommend that you do it through docker commands like that (otherwise you might encounter some errors if you do it directly outside the container):
 
    ```bash
+   docker-compose run <service> python manage.py shell
+
    docker-compose run <service> python manage.py makemigrations
 
    docker-compose run <service> python manage.py migrate
-
-   docker-compose run <service> python manage.py shell
 
    docker-compose run <service> python manage.py createsuperuser
 
    docker-compose run <service> python manage.py startapp <app_name> .\backend\djangoapp\apps\<app_folder>
    ```
 
-   #### Obs.: swap **<service>** for **backend** in case you haven't stablished a custom **container_name** for your backend container inside **docker-compose.yml**.
+   #### Obs.:
+   - if you haven't changed any **docker-compose.yml** parameter, your backend **<service>** name should be called **backend**
+   - If you desire to give it a custom name use **container_name**=your_custom_name
 
-2. Access docker folders for any reason:
+3. Access docker folders for any reason:
 
    ```bash
    docker exec -it <container_name> sh
@@ -68,7 +70,7 @@
    docker container ls -a # lists all containers you have
    ```
 
-3. Clear unused objects without a confirmation prompt:
+4. Clear unused objects without a confirmation prompt:
 
    ```bash
    docker system prune --all --force
