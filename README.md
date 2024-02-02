@@ -50,11 +50,11 @@
 
    #### Obs.:
    - if you haven't changed any **docker-compose.yml** parameter, your backend **<service>** name should be called **backend**
-   - If you desire to give it a custom name use **container_name**=your_custom_name, like this:
+   - If you desire to give it a custom name:
    ```yml
    services:
      frontend:
-      container_name=my_frontend_service_name
+      container_name: my_frontend_service_name
       ...
    ```
 
