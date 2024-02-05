@@ -49,8 +49,10 @@
    ```
 
    #### Obs.:
+
    - if you haven't changed any **docker-compose.yml** parameter, your backend **<service>** name should be called **backend**
    - If you desire to give it a custom name:
+
    ```yml
    services:
      frontend:
@@ -58,7 +60,7 @@
       ...
    ```
 
-3. Access docker folders for any reason:
+2. Access docker folders for any reason:
 
    ```bash
    docker exec -it <container_name> sh
@@ -76,7 +78,7 @@
    docker container ls -a # lists all containers you have
    ```
 
-4. Clear unused objects without a confirmation prompt:
+3. Clear unused objects without a confirmation prompt:
 
    ```bash
    docker system prune --all --force
@@ -111,12 +113,13 @@ OBS: if you haven't defined a custom postgres' container_name at docker-compose.
    PGADMIN_DEFAULT_PASSWORD="change-me"
 
 4. Inside pgadmin4, click add new server:
+
    - General:
-      - Name = Whatever you want
+     - Name = Whatever you want
    - Connection:
-      - Host name/address = **<your_project's_name>-database-1** or your custom postgres' container_name
-      - Username = your **POSTGRES_USER**
-      - Password = your **POSTGRES_PASSWORD**
+     - Host name/address = **<your_project's_name>-database-1** or your custom postgres' container_name
+     - Username = your **POSTGRES_USER**
+     - Password = your **POSTGRES_PASSWORD**
 
 5. Save
 
@@ -131,18 +134,18 @@ OBS: if you haven't defined a custom postgres' container_name at docker-compose.
 5. [Coverage](https://coverage.readthedocs.io/en/6.5.0/)
 6. [Selenium](https://selenium-python.readthedocs.io/installation.html#introduction)
 7. [Django](https://www.djangoproject.com/download/)
-8. [Django Cors Headers](https://pypi.org/project/django-cors-headers/)
-9. [Django Rest Framework](https://www.django-rest-framework.org/#installation)
-10. [Django Rest Framework Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
-11. [Psycopg2 Binary](https://www.psycopg.org/docs/install.html#quick-install)
+8. [Django Rest Framework](https://www.django-rest-framework.org/#installation)
+9. [Django Rest Framework Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
+10. [Psycopg2 Binary](https://www.psycopg.org/docs/install.html#quick-install)
 
 ### Frontend:
 
 1. [NextJS](https://nextjs.org/docs/getting-started/installation#automatic-installation)
-2. [Tailwindcss](https://tailwindcss.com/docs/installation)
-3. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
-4. [Typescript](https://www.typescriptlang.org/download)
-5. [Eslint](https://eslint.org/docs/latest/use/command-line-interface#miscellaneous)
-6. [Prettier](https://prettier.io/docs/en/install)
-7. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
-8. [React Icons](https://react-icons.github.io/react-icons/)
+2. [NextAuthJS](https://next-auth.js.org/getting-started/example)
+3. [Tailwindcss](https://tailwindcss.com/docs/installation)
+4. [Tailwind Scrollbar](https://adoxography.github.io/tailwind-scrollbar/getting-started)
+5. [Typescript](https://www.typescriptlang.org/download)
+6. [Eslint](https://eslint.org/docs/latest/use/command-line-interface#miscellaneous)
+7. [Prettier](https://prettier.io/docs/en/install)
+8. [Framer Motion](https://www.framer.com/motion/introduction/##installation)
+9. [React Icons](https://react-icons.github.io/react-icons/)
