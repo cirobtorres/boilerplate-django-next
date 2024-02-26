@@ -125,7 +125,7 @@ OBS: if you haven't defined a custom postgres' container_name at docker-compose.
 
 ## Installed Packages:
 
-### Backend:
+### Django:
 
 1. [Python Dotenv](https://github.com/theskumar/python-dotenv)
 2. [Pillow](https://pillow.readthedocs.io/en/stable/installation.html)
@@ -138,7 +138,14 @@ OBS: if you haven't defined a custom postgres' container_name at docker-compose.
 9. [Django Rest Framework Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 10. [Psycopg2 Binary](https://www.psycopg.org/docs/install.html#quick-install)
 
-### Frontend:
+### Nest:
+
+1. [typeorm]()
+2. [@nestjs/typeorm]()
+3. [pg]() typeorm driver for postgresql
+4. [@nestjs/config]() locate .env files
+
+### Next:
 
 1. [NextJS](https://nextjs.org/docs/getting-started/installation#automatic-installation)
 2. [NextAuthJS](https://next-auth.js.org/getting-started/example)
