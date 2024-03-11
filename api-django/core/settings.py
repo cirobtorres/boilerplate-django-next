@@ -1,14 +1,15 @@
 from pathlib import Path
 from datetime import timedelta
 import os
+from dotenv import load_dotenv
 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+load_dotenv()
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR.parent / 'data' / 'web'
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'INSECURE')
-SECRET_KEY_JWT = os.getenv('SECRET_KEY_JWT', 'INSECURE')
 
 DEBUG = os.getenv('DEBUG') == 'True' or False
 
@@ -56,7 +57,7 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
 
     'ALGORITHM': 'HS256',
-    'SIGNING_KEY': SECRET_KEY_JWT,
+    'SIGNING_KEY': SECRET_KEY,
     'AUTH_HEADER_TYPES': ('Bearer',),
 
     "USER_ID_FIELD": "id",

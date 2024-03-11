@@ -1,5 +1,17 @@
 # DJANGO - NEXT.JS BOILERPLATE
 
+## For django:
+
+```bash
+py.exe -m venv venv
+py.exe -m pip install --upgrade pip
+pip install -r requirements.txt
+py.exe .\manage.py collectstatic
+py.exe .\manage.py makemigrations
+py.exe .\manage.py migrate
+py.exe .\manage.py runserver
+```
+
 ## Installed Packages:
 
 ### Django:
